@@ -5,8 +5,6 @@ import shapeless.ops.coproduct.LiftAll
 import shapeless.ops.hlist.{Diff, LeftFolder, Mapper, Prepend, SubtypeUnifier, ToTraversable}
 import shapeless.{::, HList, HNil, Poly1, Poly2}
 
-import scala.language.implicitConversions
-
 object FlowAnalyser {
   def describeConnections[P <: Page,
                           ConnectionDescriptions <: HList,
